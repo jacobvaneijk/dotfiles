@@ -2,8 +2,15 @@
     path = config-local
 
 [core]
-    editor = vim
+    editor = nvim
     whitespace = trailing-space
+
+[web]
+    browser = firefox
 
 [color]
     ui = true
+
+[alias]
+    s = status
+    c = commit
