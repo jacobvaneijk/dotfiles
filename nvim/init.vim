@@ -11,6 +11,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'MarcWeber/vim-addon-mw-utils'
 Plug 'tomtom/tlib_vim'
 Plug 'garbas/vim-snipmate'
+Plug 'rust-lang/rust.vim'
 
 call plug#end()
 
