@@ -54,6 +54,12 @@ endif
 " Change the background of Vim to match the GTK theme.
 highlight Normal guibg=001
 
-" Make the line number background color the same as the regular background
-" color.
+" Make the line number background color the same as the background color.
 highlight LineNr guibg=001
+
+" Make the signs background color the same as the background color.
+highlight GitGutterChangeDelete guibg=001
+highlight GitGutterDelete guibg=001
+highlight GitGutterChange guibg=001
+highlight GitGutterAdd guibg=001
+highlight SignColumn guibg=001
