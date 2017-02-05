@@ -19,6 +19,12 @@ set colorcolumn=81
 " I hate wrapping.
 set nowrap
 
+" Still hate wrapping.
+set formatoptions-=t
+
+" Display invisible characters.
+set list
+
 " Use 4 spaces instead of tabs.
 set softtabstop=4
 set shiftwidth=4
@@ -42,6 +48,9 @@ set smartcase
 
 " Hide `.git` directory.
 set wildignore=.git
+
+" Hide the Vim mode in the command bar.
+set noshowmode
 
 " Use a dark scheme.
 set background=dark
