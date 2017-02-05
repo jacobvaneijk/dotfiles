@@ -20,7 +20,6 @@ alias dots="cd ~/.dotfiles"
 alias config="cd ${XDG_CONFIG_HOME}"
 alias update="sudo pacman -Syu"
 alias battery="acpi -b"
-alias vim="nvim"
 
 # Better tree.
 alias tree="tree -aC -I '.git|node_modules' --dirsfirst"
