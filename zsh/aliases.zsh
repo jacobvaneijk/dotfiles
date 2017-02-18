@@ -12,15 +12,6 @@ alias fgrep="fgrep --color=auto"
 # Colorize output for ls command.
 alias ls="ls --color=auto"
 
-# Some handy shortcuts.
-alias root="cd /"
-alias home="cd ~"
-alias dev="cd ~/Development"
-alias dots="cd ~/.dotfiles"
-alias config="cd ${XDG_CONFIG_HOME}"
-alias update="sudo pacman -Syu"
-alias battery="acpi -b"
-
 # Better tree.
 alias tree="tree -aC -I '.git|node_modules' --dirsfirst"
 
