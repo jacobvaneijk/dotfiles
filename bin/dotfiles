@@ -14,6 +14,7 @@ success() {
 
 error() {
     printf "\33[31m${1}\33[0m\n"
+    exit 1
 }
 
 # Check for command line arguments.
@@ -27,7 +28,6 @@ do
             printf " -h, --help     Display this information.\n"
             printf " -q, --quiet    Be quiet; don't output any information but errors.\n"
             printf " -S, --no-sync  Don't sync local repo with remote.\n"
-            printf " -V, --verbose  Be verbose.\n"
             printf "\n"
             printf "For more information, please see: <https://github.com/jacobvaneijk/dotfiles>.\n"
             printf "\n"
@@ -41,10 +41,6 @@ do
 
         -S|--no-sync)
             no_sync=true
-        ;;
-
-        -V|--verbose)
-            be_verbose=true
         ;;
 
         -*|--*)
@@ -69,12 +65,7 @@ fi
 if [[ ! $no_sync ]]; then
     info "Syncing with the remote Git repository..."
 
-    if [[ $be_verbose ]]; then
-	printf "\n"
-	git pull -r origin master
-    else
-        git pull -r origin master &> /dev/null
-    fi
+    git pull -r origin master &> /dev/null
 
     if [[ $? -eq 0 ]]; then
         success "OK."
@@ -89,12 +80,7 @@ info "Creating symbolic links..."
 for dir in $(find * -maxdepth 0 -type d -not -path bin);
 do
     # ...create a symbolic link in $XDG_CONFIG_HOME.
-    if [[ $be_verbose ]]; then
-        printf "\n"
-        ln -fs "${HOME}/.dotfiles/${dir}" "${XDG_CONFIG_HOME}/${dir}"
-    else
-        ln -fs "${HOME}/.dotfiles/${dir}" "${XDG_CONFIG_HOME}/${dir}" &> /dev/null
-    fi
+    ln -fs "${HOME}/.dotfiles/${dir}" "${XDG_CONFIG_HOME}"
 done
 
 if [[ $? -eq 0 ]]; then
