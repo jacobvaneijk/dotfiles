@@ -9,3 +9,9 @@ export PATH="${PATH}:${HOME}/.dotfiles/bin"
 
 # Add the Rust toolchain to the path.
 export PATH="${PATH}:${HOME}/.cargo/bin"
+
+# Add Composer vendor bin directory to the path.
+export PATH="${PATH}:${HOME}/.config/composer/vendor/bin"
+
+# Add Flutter bin directory to the path.
+export PATH="${PATH}:/opt/flutter/bin"
