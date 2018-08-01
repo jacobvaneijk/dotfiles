@@ -12,3 +12,8 @@ function up() {
         cd $cd_str
     fi
 }
+
+# Find plain text occurrences in files in the current directory.
+function fif() {
+    grep -rnw '.' -e "$@"
+}
