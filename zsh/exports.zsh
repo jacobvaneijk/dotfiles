@@ -15,3 +15,6 @@ export PATH="${PATH}:${HOME}/.config/composer/vendor/bin"
 
 # Add Flutter bin directory to the path.
 export PATH="${PATH}:/opt/flutter/bin"
+
+# Add Go `bin` location to the path.
+export PATH="${PATH}:${HOME}/go/bin"
