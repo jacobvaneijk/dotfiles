@@ -1,5 +1,5 @@
 " Ocean Next
-colorscheme base16-ocean
+colorscheme onedark
 
 " Set the shell to zsh.
 set shell=/bin/zsh
@@ -72,3 +72,6 @@ highlight GitGutterDelete guibg=001
 highlight GitGutterChange guibg=001
 highlight GitGutterAdd guibg=001
 highlight SignColumn guibg=001
+
+" Disable swap files.
+set noswapfile
