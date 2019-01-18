@@ -4,6 +4,10 @@ export VISUAL=$EDITOR
 export BROWSER="firefox"
 export PAGER="less"
 
+# Set environment variable for Go.
+export GOPATH="${HOME}/go"
+export GOBIN="${GOPATH}/bin"
+
 # Make the dotfiles script runnable throughout the system.
 export PATH="${PATH}:${HOME}/.dotfiles/bin"
 
