@@ -10,7 +10,7 @@ alias egrep="egrep --color=auto"
 alias fgrep="fgrep --color=auto"
 
 # Colorize output for ls command.
-alias ls="ls --color=auto"
+alias ls="ls --color=auto --group-directories-first"
 
 # Better tree.
 alias tree="tree -aC -I '.git|node_modules' --dirsfirst"
@@ -23,3 +23,6 @@ alias tmux="tmux -f ${XDG_CONFIG_HOME}/tmux/.tmux.conf"
 
 # Reload Zsh configuration.
 alias reload="source ${XDG_CONFIG_HOME}/zsh/.zshrc"
+
+# Use `bat` instead of `cat`.
+alias cat="bat"
