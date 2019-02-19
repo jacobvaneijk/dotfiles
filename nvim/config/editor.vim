@@ -75,3 +75,6 @@ highlight SignColumn guibg=001
 
 " Disable swap files.
 set noswapfile
+
+" Avoid problems with file watchers (otherwise writes will be triggered twice).
+set backupcopy=yes
