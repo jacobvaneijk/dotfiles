@@ -55,3 +55,8 @@ transfer() {
     cat $tmpfile
     rm -f $tmpfile
 }
+
+# Make a new directory and immediatly move into it.
+function mkcdir() {
+    mkdir -p -- "$1" && cd -P -- "$1"
+}
