@@ -38,7 +38,7 @@ set smartindent
 set showmatch
 
 " Set custom invisible characters.
-set listchars=tab:▸\ ,eol:¬,extends:❯,precedes:❮,trail:·
+set listchars=tab:··,space:·,eol:¬,extends:»,precedes:«,trail:·
 
 " Ignore cases when searching
 set ignorecase
