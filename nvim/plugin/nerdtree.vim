@@ -19,3 +19,10 @@ let NERDTreeMinimalUI=1
 
 " Hide files specified in wildignore.
 let NERDTreeRespectWildIgnore=1
+
+" Gophers look best in blue.
+let g:NERDTreeExtensionHighlightColor = {}
+let g:NERDTreeExtensionHighlightColor["go"] = "689FB6"
+
+" Equalize the space before and after the Glyph.
+let g:WebDevIconsNerdTreeBeforeGlyphPadding = ''
