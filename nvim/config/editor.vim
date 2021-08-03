@@ -19,6 +19,9 @@ set colorcolumn=81
 " I hate wrapping.
 set nowrap
 
+" Incrementally scroll one character at a time to reveal more text.
+set sidescroll=1
+
 " Still hate wrapping.
 set formatoptions-=t
 
