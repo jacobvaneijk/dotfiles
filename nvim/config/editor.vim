@@ -63,6 +63,9 @@ if has("termguicolors")
     set termguicolors
 endif
 
+" Highlight the current line.
+set cursorline
+
 " Change the background of Vim to match the GTK theme.
 highlight Normal guibg=001
 
